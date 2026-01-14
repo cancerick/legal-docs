@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Hatchco App</title>
+    <link rel="icon" href="https://hatchco.com/favicon.ico">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            padding: 50px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e1e8ed;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+        
+        .app-name {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        
+        .app-name span {
+            color: #3498db;
+            font-weight: 800;
+        }
+        
+        .policy-title {
+            color: #34495e;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .last-updated {
+            background: #e8f4fc;
+            padding: 12px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: 0.95rem;
+            color: #2c3e50;
+            border-left: 4px solid #3498db;
+            margin-bottom: 30px;
+        }
+        
+        .last-updated strong {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+        
+        .intro {
+            font-size: 1.1rem;
+            color: #5d6d7e;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #2ecc71;
+            line-height: 1.8;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin: 35px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+            position: relative;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: #3498db;
+        }
+        
+        h3 {
+            color: #34495e;
+            font-size: 1.2rem;
+            margin: 25px 0 15px;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 18px;
+            text-align: justify;
+            color: #4a5568;
+        }
+        
+        ul {
+            margin-left: 25px;
+            margin-bottom: 25px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 10px;
+            color: #4a5568;
+        }
+        
+        li::before {
+            content: '•';
+            color: #3498db;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            font-size: 1.2em;
+        }
+        
+        .security-note {
+            background: linear-gradient(135deg, #e8f6f3 0%, #d1f2eb 100%);
+            border-left: 4px solid #2ecc71;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .security-note h3 {
+            color: #27ae60;
+            margin-top: 0;
+        }
+        
+        .no-collect {
+            background: linear-gradient(135deg, #fef9e7 0%, #fcf3cf 100%);
+            border-left: 4px solid #f1c40f;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .no-collect h3 {
+            color: #d68910;
+            margin-top: 0;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #eaf2f8 0%, #d6eaf8 100%);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0 30px;
+            text-align: center;
+            border: 1px solid #d4e6f1;
+        }
+        
+        .contact-title {
+            color: #2874a6;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .email-link {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .email-link:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 1px solid #ecf0f1;
+            color: #7f8c8d;
+            font-size: 0.95rem;
+        }
+        
+        .footer-links {
+            margin-top: 15px;
+        }
+        
+        .footer-links a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #2ecc71;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 25px;
+                border-radius: 12px;
+            }
+            
+            .app-name {
+                font-size: 2rem;
+            }
+            
+            .policy-title {
+                font-size: 1.5rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            .security-note, .no-collect, .contact-section {
+                padding: 20px;
+            }
+            
+            .email-link {
+                padding: 12px 24px;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .app-name {
+                font-size: 1.8rem;
+            }
+            
+            .policy-title {
+                font-size: 1.3rem;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+        
+        /* Animación suave al cargar */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .container {
+            animation: fadeIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="app-name"><span>Hatchco</span> App</h1>
+            <h2 class="policy-title">Política de Privacidad</h2>
+        </div>
+        
+        <div class="last-updated">
+            <strong>Última actualización:</strong> 12 de enero de 2026
+        </div>
+        
+        <div class="intro">
+            La aplicación móvil Hatchco (en adelante, "la Aplicación") es una herramienta de gestión administrativa de uso interno. Esta política describe cómo se maneja la información dentro de la Aplicación para garantizar la transparencia y la seguridad de los usuarios.
+        </div>
+        
+        <h2>1. Información que recopilamos</h2>
+        <p>La Aplicación está diseñada estrictamente para el control de inventario de productos (huevos) y la gestión de ventas. Por lo tanto:</p>
+        
+        <h3>Datos de Operación:</h3>
+        <p>Recopilamos datos transaccionales ingresados por el usuario, tales como cantidades de entrada de producto al almacén, registros de salida y asignación a vendedores.</p>
+        
+        <h3>Identificadores de Usuario:</h3>
+        <p>Para el acceso al sistema, se utiliza un nombre de usuario y contraseña proporcionados por la administración de Hatchco. Estos datos se utilizan exclusivamente para autenticar la sesión y registrar quién realiza cada movimiento de inventario.</p>
+        
+        <h3>Información del Dispositivo:</h3>
+        <p>Podemos recopilar datos técnicos básicos (modelo del dispositivo y versión del sistema operativo) para asegurar la compatibilidad técnica de la Aplicación.</p>
+        
+        <div class="no-collect">
+            <h3>2. Lo que NO recopilamos <span class="badge">Importante</span></h3>
+            <p>Para su tranquilidad, la Aplicación:</p>
+            <ul>
+                <li><strong>No</strong> accede a su ubicación GPS.</li>
+                <li><strong>No</strong> accede a sus fotos, videos o archivos personales.</li>
+                <li><strong>No</strong> accede a su cámara o micrófono sin su consentimiento explícito (y solo si la función de escaneo de códigos de barras fuera implementada).</li>
+                <li><strong>No</strong> accede a su lista de contactos.</li>
+            </ul>
+        </div>
+        
+        <h2>3. Uso de la Información</h2>
+        <p>La información recopilada se utiliza exclusivamente para:</p>
+        <ul>
+            <li>Mantener el registro actualizado del inventario de la empresa.</li>
+            <li>Generar reportes administrativos de entradas y salidas de producto, visibles tanto en la Aplicación como en la plataforma web oficial del sistema Hatchco.</li>
+            <li>Garantizar la seguridad y trazabilidad de las operaciones comerciales de Hatchco.</li>
+            <li>Sincronizar los movimientos de inventario en tiempo real entre el dispositivo móvil y el servidor central de la empresa.</li>
+        </ul>
+        
+        <h2>4. Compartición de Datos</h2>
+        <p>Hatchco no vende, alquila ni comparte datos personales o de operación con terceros, agencias de publicidad o empresas externas. Los datos se almacenan de forma segura en los servidores privados del sistema administrativo Hatchco.</p>
+        
+        <div class="security-note">
+            <h3>5. Seguridad de los Datos</h3>
+            <p>Implementamos medidas de seguridad técnicas para proteger la información contra el acceso no autorizado o la alteración. Toda la comunicación entre la Aplicación y los servidores de Hatchco se realiza de forma cifrada mediante el protocolo seguro HTTPS (SSL/TLS). El acceso a los datos está restringido únicamente al personal administrativo autorizado.</p>
+            
+            <p>Los usuarios pueden solicitar la eliminación de su cuenta y datos asociados contactando al administrador del sistema Hatchco o enviando un correo a <strong>info.dass.mx@gmail.com</strong></p>
+        </div>
+        
+        <div class="contact-section">
+            <h3 class="contact-title">6. Contacto</h3>
+            <p>Si tiene preguntas sobre esta política o el funcionamiento de la Aplicación, puede contactar al equipo de soporte técnico en:</p>
+            
+            <a href="mailto:info.dass.mx@gmail.com" class="email-link">
+                ✉️ info.dass.mx@gmail.com
+            </a>
+            
+            <p style="margin-top: 20px; font-size: 0.95rem; color: #5d6d7e;">
+                Respondemos normalmente en un plazo de 24-48 horas hábiles.
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p>© 2026 Hatchco App. Todos los derechos reservados.</p>
+            <p>Aplicación de gestión administrativa interna</p>
+            
+            <div class="footer-links">
+                <a href="https://hatchco.com" target="_blank">Sitio Web</a>
+                |
+                <a href="https://app.hatchco.com" target="_blank">Plataforma Web</a>
+                |
+                <a href="#top">Volver arriba</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Script para mejorar la experiencia
+        document.addEventListener('DOMContentLoaded', function() {
+            // Suavizar scroll al hacer clic en enlaces internos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#top') {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                });
+            });
+            
+            // Actualizar año automáticamente
+            const currentYear = new Date().getFullYear();
+            const yearElement = document.querySelector('.footer p');
+            if (yearElement && yearElement.textContent.includes('2026')) {
+                yearElement.innerHTML = yearElement.innerHTML.replace('2026', currentYear);
+            }
+            
+            // Resaltar sección al pasar el mouse
+            const sections = document.querySelectorAll('h2, h3');
+            sections.forEach(section => {
+                section.addEventListener('mouseenter', function() {
+                    this.style.transition = 'color 0.3s';
+                    this.style.color = '#3498db';
+                });
+                
+                section.addEventListener('mouseleave', function() {
+                    this.style.color = '';
+                });
+            });
+        });
+        
+        // Mostrar mensaje de carga completada
+        window.addEventListener('load', function() {
+            console.log('Política de Privacidad Hatchco cargada correctamente');
+        });
+    </script>
+</body>
+</html>
